@@ -1,0 +1,49 @@
+s(X, [ben,uyudum],[]).
+s(X, [ uyudum], []).
+s(X, [ben, seni, gOrdUm], []).
+s(X, [seni, ben, gOrdUm], []).
+s(X, [gOrdUm, seni, ben], []).
+s(X, [evdeki, adam, uyudu], []).
+s(X, [adam, bana, kitabI, verdi], []).
+s(X, [uyuyan, adamI, gOrdUm], []).
+s(X, [benim, gOrdUGUm, adam, uyudu], []).
+s(X, [adam, beni, gOrdU], []).
+s(X, [adam, arabayI, gOrdU], []).
+s(X, [her,oGrenciyi,bir,doktor,gOrdU],[]).
+s(X, [iki,adam,gOrdUm],[]).
+s(X, [uyuyan, adamIn, gOrdUGU, doktoru,gOrdUm],[]).
+s(X, [ben, araba, gOrdUm], []).
+
+
+% bizim extralarimiz :)
+
+s(X, [seni, gOrdUm], []).
+s(X, [adam, uyudu], []).
+s(X, [ben, gOrdUm], []).  % bu ornekte iki kere yanit doner cunku gordum iki cesit obje alir ve bu ornekte obje dusmus. her iki durum icin de yanit doner.
+s(X, [gOrdUm], []). % 2 as yukarisi :)
+s(X, [gOrdUm, ben], []). % X 2
+s(X, [gOrdUm, ben, seni], []).
+s(X, [iki,adamI,gOrdUm],[]).
+s(X, [her,adamI,gOrdUm],[]).
+s(X, [gOrdUm, seni, ben], []).
+s(X, [evdeki, adamI, gOrdU], []).
+s(X, [gOrdUm, evdeki, adamI], []).
+s(X, [gOrdUGUm,adam,uyudu],[]).
+s(X, [benim,gOrdUGUm,adam,uyudu],[]).
+
+
+%olumsuzlar
+
+s(X, [ben,uyudu],[]).
+s(X, [ben,seni,uyudum],[]).
+s(X, [benim, uyudum], []).
+s(X, [iki,adamlar,uyudular],[]).
+s(X, [benim,gOren,adam,uyudu],[]).
+s(X, [benim,gOrDuGUm,adamI,uyudu],[]).
+s(X, [her,oGrenciler,bir,doktor,gOrdU],[]).
+
+% bizim OlUmsUz ekstaralar :))
+
+s(X, [iki,adamlarI,gOrdUm],[]).
+s(X, [gOrdUm, evdeki, adam], []).
+
